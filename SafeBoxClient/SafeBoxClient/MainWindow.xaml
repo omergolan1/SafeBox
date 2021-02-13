@@ -1,0 +1,39 @@
+﻿<Window x:Name="Mwindow" x:Class="SafeBoxClient.MainWindow" WindowState="Maximized"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SafeBoxClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" Closing="Window_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="images/backGround1.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="238*"/>
+            <RowDefinition Height="131*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="108*"/>
+            <RowDefinition Height="158*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="238*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380*"/>
+            <ColumnDefinition Width="286*"/>
+            <ColumnDefinition Width="158*"/>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="223*"/>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="586*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="loginIMGBTN" Grid.Row="6" Source="images/login.png" RenderTransformOrigin="0.5,0.5" Grid.Column="3" Grid.ColumnSpan="2" MouseDown="LoginIMGBTN_MouseDown"/>
+        <Image x:Name="registerIMGBTN" Grid.Row="6" Source="images/register.png" Grid.Column="1" MouseDown="RegisterIMGBTN_MouseDown"/>
+        <Image x:Name="deleteUserBTN" Grid.Row="2" Source="images/delete user.png" Grid.ColumnSpan="2" Grid.Column="4" Grid.RowSpan="2" MouseDown="DeleteUserBTN_MouseDown"/>
+    </Grid>
+
+</Window>
